@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>Javascript get Element by tag name() Demo</h1>
+    <h2>First Heading</h2>
+    <p>This is first paragraph</p>
+    <h2>Second heading</h2>
+    <p>This is seconf para</p>
+    <h2>Third heading</h2>
+    <button id="btn">count</button>
+
+    <script>
+        let btn=document.getElementById('btn')
+        btn.addEventListener(
+            'click',()=>{
+                let headings=document.getElementsByTagName('h2')
+                alert("uNm of h2 Tag is "+headings.length)
+            }
+        );
+    </script>
+</body>
+</html>
